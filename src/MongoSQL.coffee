@@ -59,10 +59,3 @@ module.exports = class MongoSQL
       where: ("#{keys[idx]} #{ops[idx]} #{phs[idx]}" for key, idx in keys).join ' AND '
       value: vals
     } 
-
-unless module.parents?
-  expect = require('chai').expect
-  expect(multiplyString('hoge', 1, '')).to.be.equal 'hoge'
-  expect(multiplyString('hoge', 2, '')).to.be.equal 'hogehoge'
-  expect(multiplyString('hoge', 3, ',')).to.be.equal 'hoge,hoge,hoge'
-  
