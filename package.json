@@ -1,5 +1,5 @@
 {
-  "name": "MongoSQL",
+  "name": "mongosql",
   "version": "0.0.0",
   "description": "mongo query to sql",
   "main": "index.js",
@@ -7,9 +7,20 @@
     "start": "coffee -bj lib/MongoSQL.js -c src/MongoSQL.coffee",
     "test": "mocha --compilers coffee:coffee-script -R spec"
   },
-  "repository": "",
-  "author": "",
+  "repository": "git://github.com/muddydixon/mongosql.git",
+  "author": {
+    "name": "Muddy Dixon muddydixon@gmail.com",
+    "email": "muddydixon@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/muddydixon/mongosql/issues"
+  },
+  "engines": {
+    "node": ">= 0.8.15"
+  },
+  "homepage": "muddydixon.hatenablog.com",
   "license": "Apache License Version 2.0",
+  "keywords": ["mongodb", "sql"],
   "readmeFilename": "README.md",
   "devDependencies": {
     "chai": "~1.5.0",
