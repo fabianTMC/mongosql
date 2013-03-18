@@ -18,6 +18,7 @@ mongosql.parse({gender: 1});
 // {where: "gender = ?", value: [1]}
 mongosql.parse({gender: 1, age: [23, 24, 25]}); 
 // {where: "gender = ? AND age IN (?, ?, ?)", value: [1, 23, 24, 25]}
+```
 
 # TODO
 
